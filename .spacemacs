@@ -48,10 +48,11 @@ This function should only modify configuration layer settings."
      spell-checking
      syntax-checking
      version-control
-     (rust :variables
-           rust-backend 'lsp)
      (lsp :variables
-          lsp-rust-server 'rust-analyser)
+          lsp-rust-server 'rust-analyzer)
+     (rust :variables
+           rust-backend 'lsp
+           rust-fomat-on-save t)
      (org :variables
           org-enable-reveal-js-support t
           org-enable-org-journal-support t
